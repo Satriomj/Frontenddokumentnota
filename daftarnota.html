@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Nota</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Daftar Nota</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Tanggal Nota</th>
+            <th scope="col">Invoice</th>
+            <th scope="col">Nama Penerima</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>2023-05-21</td>
+            <td>N V - D J C - F - K U N 0 0 0 1</td>
+            <td>Abdul Rahman</td>
+            <td>
+              <a href="#" class="btn btn-primary btn-sm" onclick="lihatNota(1)">Lihat</a>
+              <a href="#" class="btn btn-success btn-sm" onclick="downloadNota(1)">Download</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>2023-07-22</td>
+            <td>N V - D J C - F - K U N 0 0 0 1</td>
+            <td>Abdul Rahman</td>
+            <td>
+              <a href="#" class="btn btn-primary btn-sm" onclick="lihatNota(2)">Lihat</a>
+              <a href="#" class="btn btn-success btn-sm" onclick="downloadNota(2)">Download</a>
+            </td>
+          </tr>
+          <!-- Tambahkan baris lain di sini sesuai dengan data nota yang Anda miliki -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script untuk aksi lihat dan download -->
+    <script>
+      function lihatNota(noNota) {
+        // Lakukan aksi untuk melihat nota dengan nomor tertentu.
+        // Misalnya, Anda bisa membuka modal untuk menampilkan isi nota.
+        // Untuk contoh ini, kita hanya menampilkan pesan.
+        alert(`Melihat Nota No. ${noNota}`);
+      }
+
+      function downloadNota(noNota) {
+        // Lakukan aksi untuk mendownload nota dengan nomor tertentu.
+        // Misalnya, Anda bisa mengarahkan pengguna ke halaman yang menyediakan tautan unduh.
+        // Untuk contoh ini, kita hanya menampilkan pesan.
+        alert(`Mendownload Nota No. ${noNota}`);
+      }
+    </script>
+  </body>
+</html>

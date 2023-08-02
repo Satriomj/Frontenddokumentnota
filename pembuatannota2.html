@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pembuatan Nota</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styletampilawal.css" />
+  </head>
+  <body>
+    <!-- Tampilan navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="nav-left">
+        <img src="./Assets/edits.png" alt="" width="45px" height="40px" />
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./Assets/iconberanda.png" alt="" width="30px" height="30px" />Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./Assets/iconbarang.png" alt="" width="30px" height="30px" />Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./Assets/iconpembuatannota.png" alt="" width="30px" height="30px" />Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="./Assets/iconnota.png" alt="" width="30px" height="30px" />Barang</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <img src="./Assets/icon profile.png" alt="Profile Icon" width="30px" height="30px" />
+      </div>
+    </nav>
+    <!-- Penutup Navbar -->
+    <!-- isi content -->
+    <div class="container mt-5">
+      <h2>Form Pengisian Notaris</h2>
+      <form>
+        <div class="form-group col-md-7">
+          <label for="penanggungJawab">SKU:</label>
+          <input type="text" class="form-control" id="penanggungJawab" name="penanggungJawab" required />
+        </div>
+        <div class="form-group col-md-7">
+          <label for="desa">Description:</label>
+          <input type="text" class="form-control" id="desa" name="desa" required />
+        </div>
+        <div class="form-group col-md-7">
+          <label for="harga">Harga</label>
+          <input type="number" class="form-control" id="harga" name="harga" />
+        </div>
+        <div class="form-group col-md-7">
+          <label for="jumlah">Jumlah</label>
+          <input type="number" class="form-control" id="jumlah" name="jumlah" />
+        </div>
+        <div class="form-group col-md-7">
+          <label for="desa">Total:</label>
+          <input type="text" class="form-control" id="desa" name="desa" required />
+        </div>
+        <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group" role="group" aria-label="Previous button">
+            <button type="button" class="btn btn-primary" id="prevBtn">Previous</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Next button">
+            <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Penutup content -->
+    <!-- Pembuka footer -->
+
+    <footer class="footer text-dark mt-4 py-3">
+      <div class="container">
+        <div class="row">
+          <div class="card col-md-3">
+            <h3>Website Resmi</h3>
+            <p>https://djcorp.co.id/</p>
+          </div>
+          <div class="card col-md-3">
+            <h3>Kontak</h3>
+            <h5>+62 877 7011 5420</h5>
+            <div class="social-media-icons">
+              <img src="./Assets/fb.png" alt="" />
+              <img src="./Assets/ig.png" alt="" />
+              <img src="./Assets/yt.png" alt="" />
+            </div>
+          </div>
+          <div class="card col-md-3">
+            <h3>Alamat</h3>
+            <h5>
+              PT. Darmajaya Digital Solusi<br />
+              2 Floor, DSC Building<br />
+              Jl. ZA. Pagar Alam No. 93<br />
+              Bandar Lampung
+            </h5>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between footer-links" style="margin-bottom: 0">
+          <div>
+            <p>Dokumentasi | Tentang | Kontak | Privasi</p>
+          </div>
+          <div class="copy-right">
+            <p>Copyright© 2023. DJCorp Notaris, Support By DJCorp</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Penutup footer -->
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

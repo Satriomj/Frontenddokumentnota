@@ -1,0 +1,38 @@
+.footer {
+    background-color: rgba(30, 144, 255, 0.9);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 8rem; 
+}
+
+.card:last-child {
+    margin-right: 0; 
+}
+
+.card h3 {
+    margin-top: 20px;
+}
+
+.col-md-3 img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.copy-right {
+    text-align: center;
+}
+
